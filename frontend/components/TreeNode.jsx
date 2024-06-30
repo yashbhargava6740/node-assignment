@@ -1,4 +1,3 @@
-// components/TreeNode.jsx
 import React from 'react';
 
 const TreeNode = ({ node }) => {
