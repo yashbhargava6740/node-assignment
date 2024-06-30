@@ -27,20 +27,19 @@ tree-visualization-project/
 │   └── tsconfig.json
 ├── frontend/
 │   ├── app/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx
-│   │   ├── UserInput.tsx
-│   │   └── TreeDisplay.tsx
+│   │   ├── layout.jsx
+│   │   ├── page.jsx
+│   │   ├── UserInput.jsx
+│   │   └── TreeDisplay.jsx
 │   ├── store/
-│   │   ├── index.ts
-│   │   ├── treeSlice.ts
-│   │   └── userSlice.ts
+│   │   ├── index.js
+│   │   ├── treeSlice.js
+│   │   └── userSlice.js
 │   ├── utils/
-│   │   └── TreeGenerator.ts
+│   │   └── TreeGenerator.js
 │   ├── .env.local
 │   ├── next.config.js
 │   ├── package.json
-│   └── tsconfig.json
 ```
 
 ## Environment Variables
