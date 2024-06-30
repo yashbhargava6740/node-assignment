@@ -1,11 +1,12 @@
 // components/TreeNode.jsx
-import React, { useState } from 'react';
+"use client"
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { updateNode } from '../store/treeSlice';
 
 const TreeNode = ({ node }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [value, setValue] = useState(node.value);
+  const [value, setValue] = useState(node?.value);
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -18,7 +19,7 @@ const TreeNode = ({ node }) => {
 
   const handleBlur = () => {
     setIsEditing(false);
-    dispatch(updateNode({ id: node.id, value }));
+    dispatch(updateNode({ id: node?.id, value }));
   };
 
   return (
@@ -31,7 +32,7 @@ const TreeNode = ({ node }) => {
           onBlur={handleBlur}
         />
       ) : (
-        <span onClick={handleClick}>{node.value}</span>
+        <span onClick={handleClick}>{node?.value}</span>
       )}
     </div>
   );

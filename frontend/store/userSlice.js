@@ -1,4 +1,5 @@
 // store/userSlice.js
+// "use client"
 import { createSlice } from '@reduxjs/toolkit';
 
 const userSlice = createSlice({

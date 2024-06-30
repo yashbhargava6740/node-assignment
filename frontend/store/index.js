@@ -1,4 +1,5 @@
 // store/index.js
+// "use client"
 import { configureStore } from '@reduxjs/toolkit';
 import userReducer from './userSlice';
 import treeReducer from './treeSlice';

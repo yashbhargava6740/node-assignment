@@ -17,4 +17,17 @@ export class UserService {
     const createdUser = new this.userModel(createUserDto);
     return createdUser.save();
   }
+
+  async saveTree(username: string, tree: any): Promise<User> {
+    return this.userModel.findOneAndUpdate(
+      { username },
+      { tree },
+      { new: true, upsert: true }
+    ).exec();
+  }
+
+  async getTree(username: string): Promise<any> {
+    const user = await this.userModel.findOne({ username }).exec();
+    return user ? user.tree : null;
+  }
 }
