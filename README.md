@@ -9,39 +9,6 @@ This project is a web application that renders a tree structure with 10,000 node
 - Node.js (>=14.x)
 - npm (>=6.x)
 
-## Project Structure
-
-```
-tree-visualization-project/
-├── backend/
-│   ├── src/
-│   │   ├── app.module.ts
-│   │   ├── main.ts
-│   │   └── user/
-│   │       ├── user.controller.ts
-│   │       ├── user.module.ts
-│   │       └── user.service.ts
-│   ├── .env
-│   ├── nest-cli.json
-│   ├── package.json
-│   └── tsconfig.json
-├── frontend/
-│   ├── app/
-│   │   ├── layout.jsx
-│   │   ├── page.jsx
-│   │   ├── UserInput.jsx
-│   │   └── TreeDisplay.jsx
-│   ├── store/
-│   │   ├── index.js
-│   │   ├── treeSlice.js
-│   │   └── userSlice.js
-│   ├── utils/
-│   │   └── TreeGenerator.js
-│   ├── .env.local
-│   ├── next.config.js
-│   ├── package.json
-```
-
 ## Environment Variables
 
 ### Backend
